@@ -1,10 +1,10 @@
 {
-    "Model": {
+    "model": {
         "supplier_id": "WISC",
         "model_id": "EuWs",
         "model_version": "0.0.0.1"
     },
-    "keys_data_path": "./keys_data/EuWs",
+    "keys_data_path": "../ZurichWorkshop2018/keys_data/EuWs",
     "peril": {
         "peril": "wind",
         "peril_id": 1,
