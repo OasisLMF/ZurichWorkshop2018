@@ -15,7 +15,15 @@ We recommend using a Python virtual environment for running the excercises. To s
 
 ## Exercises
 
-### Running the exercises
+#### Running the exercises
+The exercises are provided as interactive Jupyter notebooks. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. To install Jupyter, run the following commands:
+
+   python -m pip install --upgrade pip
+   python -m pip install jupyter
+
+To launch Jupyter, run the following command which will start Jupyter and open the home page in a browser window. You can then navigate to the relevant workbook.
+
+   jupyter notebook
 
 #### Excercise 1: Introduction to the Oasis Model Development Kit (MDK).
 #### Excercise 2: Introduction to Oasis model files and formats.
