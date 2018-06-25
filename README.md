@@ -29,7 +29,7 @@ We recommend using a Python virtual environment for running the excercises. To s
 * <a href="https://oasislmf.github.io/docs/oasis_mdk.html">Modules</a>
 ### Other reference material
 * <a href="http://jupyter.org/">Jupyter project</a>
-* <a href="https://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261">Interactive notebooks - sharing the code (Nature article)</>
+* <a href="https://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261">Interactive notebooks - sharing the code (Nature article)</a>
 * <a href="http://docker.com/">Docker project</a>
 
 ## License
