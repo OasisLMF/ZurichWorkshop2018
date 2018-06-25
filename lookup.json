@@ -1,0 +1,93 @@
+{
+    "Model": {
+        "supplier_id": "WISC",
+        "model_id": "EuWs",
+        "model_version": "0.0.0.1"
+    },
+    "keys_data_path": "keys_data/EuWs",
+    "peril": {
+        "peril": "wind",
+        "peril_id": 1,
+        "file_path": "%%KEYS_DATA_PATH%%/area_peril_dict.csv",
+        "file_type": "csv",
+        "float_precision_high": true,
+        "num_areas": 100,
+        "cols": ["AREA_PERIL_ID", "LON1", "LAT1", "LON2", "LAT2", "LON3", "LAT3", "LON4", "LAT4"],
+        "non_na_cols": ["AREA_PERIL_ID", "LON1", "LAT1", "LON2", "LAT2", "LON3", "LAT3", "LON4", "LAT4"],
+        "col_dtypes": {
+            "AREA_PERIL_ID": "int",
+            "LON1": "float",
+            "LAT1": "float",
+            "LON2": "float",
+            "LAT2": "float",
+            "LON3": "float",
+            "LAT3": "float",
+            "LON4": "float",
+            "LAT5": "float"
+        },
+        "sort_col": "AREA_PERIL_ID",
+        "sort_ascending": true,
+        "peril_area_id_col": "AREA_PERIL_ID",
+        "area_poly_coords_cols": {
+            "x1": "LONGITUDE", "y1": "LATITUDE"
+        },
+        "area_poly_coords_seq_start_idx": 1,
+        "area_reg_poly_radius": 0.00166,
+        "loc_to_global_areas_boundary_min_distance": 0,
+        "rtree_index": {
+            "buffering_capacity": 10,
+            "custom_storage_callbacks": null,
+            "custom_storage_callbacks_size": 0,
+            "dat_extension": "dat",
+            "dimension": 2,
+            "filename": "%%KEYS_DATA_PATH%%/oasislmf-piwind-0.0.0.1-areas-rtree-index",
+            "fill_factor": 0.7,
+            "idx_extension": "idx",
+            "index_capacity": 100,
+            "index_id": null,
+            "leaf_capacity": 100,
+            "near_minimum_overlap_factor": 32,
+            "overwrite": true,
+            "pagesize": 4096,
+            "point_pool_capacity": 500,
+            "region_pool_capacity": 1000,
+            "reinsert_factor": 0.3,
+            "split_distribution_factor": 0.4,
+            "storage": 0,
+            "tight_mbr": true,
+            "tpr_horizon": 20.0,
+            "type": 0,
+            "variant": 2,
+            "writethrough": false
+        }
+    },
+    "vulnerability": {
+        "file_path": "%%KEYS_DATA_PATH%%/vulnerability_dict.csv",
+        "file_type": "csv",
+        "float_precision_high": true,
+        "num_vulnerabilities": 3,
+        "cols": ["COVERAGE", "CLASS_1", "VULNERABILITY_ID"],
+        "non_na_cols": ["COVERAGE", "CLASS_1", "VULNERABILITY_ID"],
+        "key_cols": ["COVERAGE", "CLASS_1"],
+        "col_dtypes": {
+            "COVERAGE": "int", "CLASS_1": "str", "VULNERABILITY_ID": "int"
+        },
+        "sort_col": "VULNERABILITY_ID",
+        "sort_ascending": true,
+        "vulnerability_id_col": "VULNERABILITY_ID"
+    },
+    "locations": {
+        "id_col": "id",
+        "coords_type": "lonlat",
+        "coords_x_col": "lon",
+        "coords_y_col": "lat",
+        "coords_x_bounds": [-180, 180],
+        "coords_y_bounds": [-90, 90],
+        "non_na_cols": ["id", "lon", "lat"],
+        "col_dtypes": {
+            "id": "int", "lon": "float", "lat": "float"
+        },
+        "sort_col": "id",
+        "sort_ascending": true
+    }
+}
