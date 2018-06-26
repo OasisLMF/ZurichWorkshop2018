@@ -1,4 +1,4 @@
--e git+ssh://git@github.com/OasisLMF/OasisLMF.git@8284481c4bf04b8100e61d1206f120bbc770893f#egg=oasislmf
+-e git+ssh://git@github.com/OasisLMF/OasisLMF.git@feature/refactor-lookup-factory#egg=oasislmf
 matplotlib==2.2.2
 Flask==0.12
 pandas==0.22.0
