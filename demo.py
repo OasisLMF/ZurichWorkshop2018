@@ -64,7 +64,7 @@ print('\nglobal areas bounds: {}'.format(areas_index.bounds))
 # Get the leaf levels of the index
 leaf_levels = areas_index.leaves()
 n = len(leaf_levels)
-print('\nnum. leaf levels in the index {}: '.format(n))
+print('\nnum. leaf levels in the index: {} '.format(n))
 
  # Sum of number of leaves at each leaf level should equal the number of areas in the areas file
 print('\nnum. areas stored in the index: {}'.format(sum(len(leaf_levels[i][1]) for i in range(n))))
@@ -106,6 +106,8 @@ tt = time.time() - t
 print('\nCompleted combined bulk lookup for {} locations in {} seconds'.format(len(loc_df), tt))
 
 # Sample the results
-print('\n#0: {}'.format(results[0]))
-print('\n#2: {}'.format(results[2]))
-print('\nlast: {}\n'.format(results[-1]))
+print('\nSampling some results')
+print('\n#1: {}'.format(results[0]))
+print('\n#3: {}'.format(results[2]))
+print('\n#5: {}'.format(results[4]))
+print('\n#10: {}\n'.format(results[-1]))
