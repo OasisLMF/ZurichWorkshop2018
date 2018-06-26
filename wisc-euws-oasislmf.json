@@ -1,5 +1,5 @@
 {
-    "source_exposures_file_path": "source_data/SourceLocWISC_Paris.csv",
+    "source_exposures_file_path": "source_data/SourceLocWISC_Paris_2.csv",
     "source_exposures_validation_file_path": "validation_files/Generic_Windstorm_CanLoc_A.xsd",
     "source_to_canonical_exposures_transformation_file_path": "transformation_files/MappingMapToGeneric_Windstorm_CanLoc_A.xslt",
     "analysis_settings_json_file_path": "analysis_settings.json",
