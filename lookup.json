@@ -60,11 +60,11 @@
         "file_type": "csv",
         "float_precision_high": true,
         "num_vulnerabilities": 6,
-        "cols": ["VULNERABILITY_ID", "VULNERABILITY"],
-        "non_na_cols": ["VULNERABILITY_ID", "VULNERABILITY"],
-        "key_cols": ["VULNERABILITY"],
+        "cols": ["VULNERABILITY_ID", "VULNERABILITY", "COVERAGE"],
+        "non_na_cols": ["VULNERABILITY_ID", "VULNERABILITY", "COVERAGE"],
+        "key_cols": ["VULNERABILITY", "COVERAGE"],
         "col_dtypes": {
-            "VULNERABILITY_ID": "int", "VULNERABILITY": "str"
+            "VULNERABILITY_ID": "int", "VULNERABILITY": "str", "COVERAGE": "int"
         },
         "sort_col": "VULNERABILITY_ID",
         "sort_ascending": true,
