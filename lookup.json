@@ -71,17 +71,17 @@
         "vulnerability_id_col": "VULNERABILITY_ID"
     },
     "locations": {
-        "id_col": "ID",
+        "id_col": "LOCID",
         "coords_type": "lonlat",
         "coords_x_col": "LONGITUDE",
         "coords_y_col": "LATITUDE",
         "coords_x_bounds": [-180, 180],
         "coords_y_bounds": [-90, 90],
-        "non_na_cols": ["ID", "LONGITUDE", "LATITUDE", "VULNERABILITY"],
+        "non_na_cols": ["LOCID", "LONGITUDE", "LATITUDE", "VULNERABILITY"],
         "col_dtypes": {
-            "ID": "int", "LONGITUDE": "float", "LATITUDE": "float", "VULNERABILITY": "int"
+            "ID": "int", "LOCID": "int", "LONGITUDE": "float", "LATITUDE": "float", "VULNERABILITY": "int"
         },
-        "sort_col": "ID",
+        "sort_col": "LOCID",
         "sort_ascending": true
     }
 }
