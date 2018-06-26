@@ -4,7 +4,7 @@
         "model_id": "EuWs",
         "model_version": "0.0.0.1"
     },
-    "keys_data_path": "../ZurichWorkshop2018/keys_data/EuWs",
+    "keys_data_path": "/Users/srm/Documents/sandeep/cst/dev/oasis/ZurichWorkshop2018/keys_data/EuWs",
     "peril": {
         "peril": "wind",
         "peril_id": 1,
@@ -34,12 +34,12 @@
             "custom_storage_callbacks_size": 0,
             "dat_extension": "dat",
             "dimension": 2,
-            "filename": "%%KEYS_DATA_PATH%%/wisc-euws-0.0.0.1-areas-rtree-index",
-            "fill_factor": 0.7,
+            "filename": "%%KEYS_DATA_PATH%%/areas-rtree-index-py3",
+            "fill_factor": 0.9,
             "idx_extension": "idx",
-            "index_capacity": 500,
+            "index_capacity": 100,
             "index_id": null,
-            "leaf_capacity": 100,
+            "leaf_capacity": 1000,
             "near_minimum_overlap_factor": 32,
             "overwrite": true,
             "pagesize": 4096,
@@ -71,17 +71,17 @@
         "vulnerability_id_col": "VULNERABILITY_ID"
     },
     "locations": {
-        "id_col": "id",
+        "id_col": "ID",
         "coords_type": "lonlat",
-        "coords_x_col": "lon",
-        "coords_y_col": "lat",
+        "coords_x_col": "LONGITUDE",
+        "coords_y_col": "LATITUDE",
         "coords_x_bounds": [-180, 180],
         "coords_y_bounds": [-90, 90],
-        "non_na_cols": ["id", "lon", "lat"],
+        "non_na_cols": ["ID", "LONGITUDE", "LATITUDE", "VULNERABILITY"],
         "col_dtypes": {
-            "id": "int", "lon": "float", "lat": "float"
+            "ID": "int", "LONGITUDE": "float", "LATITUDE": "float", "VULNERABILITY": "int"
         },
-        "sort_col": "id",
+        "sort_col": "ID",
         "sort_ascending": true
     }
 }
