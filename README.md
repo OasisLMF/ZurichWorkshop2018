@@ -7,23 +7,29 @@ Workshop material for Zurich Oasis conference 2018.
 
 We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory:
 
-   virtualenv -p /usr/bin/python3.6 venv3.6
-   source venv3.6/bin/activate
-   pip install -r requirements.txt
-   pip install ipykernel
-   ipython kernel install --user --name=ZurichWorkshop2018
+```
+virtualenv -p /usr/bin/python3.6 venv3.6
+source venv3.6/bin/activate
+pip install -r requirements.txt
+pip install ipykernel
+ipython kernel install --user --name=ZurichWorkshop2018
+```
 
 ## Exercises
 
 #### Running the exercises
 The exercises are provided as interactive Jupyter notebooks. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. To install Jupyter, run the following commands:
 
-   python -m pip install --upgrade pip
-   python -m pip install jupyter
+```
+python -m pip install --upgrade pip
+python -m pip install jupyter
+```
 
 To launch Jupyter, run the following command which will start Jupyter and open the home page in a browser window. You can then navigate to the relevant workbook.
 
-   jupyter notebook
+```
+jupyter notebook
+```
 
 #### Excercise 1: Introduction to the Oasis Model Development Kit (MDK).
 #### Excercise 2: Introduction to Oasis model files and formats.
