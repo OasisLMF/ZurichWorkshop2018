@@ -39,6 +39,7 @@ To launch Jupyter, run the following command which will start Jupyter and open t
 * <a href="http://jupyter.org/">Jupyter project</a>
 * <a href="https://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261">Interactive notebooks - sharing the code (Nature article)</a>
 * <a href="http://docker.com/">Docker project</a>
+* <a href="https://en.wikipedia.org/wiki/R-tree">R-tree spatial indexes</a>
 
 ## License
 The code in this project is licensed under BSD 3-clause license.
