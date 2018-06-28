@@ -23,9 +23,9 @@
 		 	"event_set": "",
 		 	"event_occurrence_id": ""
 		 },
-		 "model_version_id": "EUWS",
-		 "module_supplier_id": "WISC",
+		 "model_version_id": "MEEQ",
+		 "module_supplier_id": "Catrisks",
 		 "number_of_samples": 10,
-		 "source_tag": "WISC"
+		 "source_tag": "MEEQ"
 	}
 }
