@@ -4,7 +4,6 @@ apache2-utils
 autoconf
 build-essential
 gdb
-geos
 htop
 iputils-ping
 ipython
@@ -21,3 +20,4 @@ tree
 unixodbc
 unixodbc-dev
 vim
+git
