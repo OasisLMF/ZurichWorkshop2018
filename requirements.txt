@@ -11,3 +11,4 @@ requests==2.18.4
 descartes==1.1.0
 Rtree==0.8.3
 bokeh==0.13.0
+colorcet==0.9.1

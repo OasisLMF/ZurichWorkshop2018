@@ -6,10 +6,10 @@ RUN cat apt.txt | xargs apt-get install -y
 #RUN /bin/bash -c "source venv3.6/bin/activate"
 #RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-RUN pip install --force-reinstall git+https://github.com/OasisLMF/OasisLMF.git@feature/refactor-lookup-factory#egg=oasislmf
+RUN pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF.git@feature/refactor-lookup-factory#egg=oasislmf
 #RUN pip install ipykernel
 #RUN ipython kernel install --user --name=ZurichWorkshop2018
 #RUN python -m pip install --upgrade pip
 RUN python -m pip install jupyter
 
-ENTRYPOINT jupyter notebook --allow-root --NotebookApp.token='' --ip 0.0.0.0 --no-browser
+ENTRYPOINT jupyter notebook --allow-root --NotebookApp.token='' --i 0.0.0.0 --no-browser
