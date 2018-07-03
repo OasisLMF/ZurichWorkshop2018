@@ -8,6 +8,12 @@ Workshop material for Zurich Oasis conference 2018.
 
 ## Setting up the environment
 
+The pre-requisites for the system on an Ubuntu based system are listed in apt.txt. These can be installed by running:
+
+```
+RUN cat apt.txt | xargs apt-get install -y
+```
+
 We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory:
 
 ```
