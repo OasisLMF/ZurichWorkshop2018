@@ -15,7 +15,7 @@ The pre-requisites for the system on an Ubuntu based system are listed in apt.tx
 ```
 RUN cat apt.txt | xargs apt-get install -y
 ```
-If using another distribution then the comparable packages will need to be identified and installed.
+If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image.
 
 We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory:
 
