@@ -11,9 +11,13 @@ Workshop material for Zurich Oasis conference 2018.
 We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory:
 
 ```
-virtualenv -p /usr/bin/python3.6 venv3.6
-source venv3.6/bin/activate
+virtualenv venv
+source venv/bin/activate
 pip install -r requirements.txt
+jupyter nbextension enable --py --sys-prefix qgrid
+# Temporary requirement to get development keys server features
+pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF.git@feature/refactor-lookup-factory#egg=oasislmf
+
 pip install ipykernel
 ipython kernel install --user --name=ZurichWorkshop2018
 ```
@@ -31,13 +35,12 @@ python -m pip install jupyter
 To launch Jupyter, run the following command which will start Jupyter and open the home page in a browser window. You can then navigate to the relevant workbook.
 
 ```
-jupyter notebook
+jupyter notebook  --NotebookApp.token='' --NotebookApp.password=''
 ```
 
 #### Excercise 1: Introduction to the Oasis Model Development Kit (MDK).
 #### Excercise 2: Introduction to Oasis model files and formats.
 #### Excercise 3: Using code to adjust a model.
-#### Excercise 4: Deploying a model to the Oasis platform.
 
 ## Documentation
 ### Oasis
