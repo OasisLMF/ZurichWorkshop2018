@@ -13,7 +13,6 @@ We recommend using a Python virtual environment for running the excercises. To s
 ```
 virtualenv venv
 source venv/bin/activate
-python -m pip install --upgrade pip
 pip install -r requirements.txt
 jupyter nbextension enable --py --sys-prefix qgrid
 # Temporary requirement to get development keys server features
