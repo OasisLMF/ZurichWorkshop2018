@@ -1,0 +1,1 @@
+pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF.git@feature/refactor-lookup-factory#egg=oasislmf
