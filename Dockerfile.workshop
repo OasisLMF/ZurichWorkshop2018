@@ -6,6 +6,5 @@ RUN cat apt.txt | xargs apt-get install -y
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF.git@feature/refactor-lookup-factory#egg=oasislmf
-RUN python -m pip install jupyter
 
 ENTRYPOINT jupyter notebook --allow-root --NotebookApp.token='' --i 0.0.0.0 --no-browser
