@@ -1,5 +1,5 @@
 {
-    "source_exposures_file_path": "source_data/MEEQ_loc.csv",
+    "source_exposures_file_path": "source_data/Beirut_EQ_loc.csv",
     "source_exposures_validation_file_path": "validation_files/Catrisks_SourceLoc.xsd",
     "source_to_canonical_exposures_transformation_file_path": "transformation_files/MappingMapToCatrisks_CanLoc_A.xslt",
     "analysis_settings_json_file_path": "analysis_settings.json",
