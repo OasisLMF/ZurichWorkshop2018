@@ -8,11 +8,14 @@ Workshop material for Zurich Oasis conference 2018.
 
 ## Setting up the environment
 
+### Local install (Linux)
+
 The pre-requisites for the system on an Ubuntu based system are listed in apt.txt. These can be installed by running:
 
 ```
 RUN cat apt.txt | xargs apt-get install -y
 ```
+If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image.
 
 We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory:
 
@@ -27,6 +30,17 @@ pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF
 pip install ipykernel
 ipython kernel install --user --name=ZurichWorkshop2018
 ```
+### Using Docker
+
+To build the Docker image, run the following command:
+```
+docker build -f Dockerfile.workshop -t zurich_workshop .
+```
+Then to run the container, run:
+```
+docker run -it -p 8888:8888 zurich_workshop
+```
+You can then open the notebooks in a browser at http://localhost:8888/tree
 
 ## Exercises
 
