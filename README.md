@@ -1,6 +1,9 @@
 <img src="https://oasislmf.org/packages/oasis_theme_package/themes/oasis_theme/assets/src/oasis-lmf-colour.png" alt="Oasis LMF logo" width="250"/>
 
 # ZurichWorkshop2018
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/OasisLMF/ZurichWorkshop2018/master)
+
 Workshop material for Zurich Oasis conference 2018.
 
 ## Setting up the environment
