@@ -13,7 +13,7 @@ Workshop material for Zurich Oasis conference 2018.
 The pre-requisites for the system on an Ubuntu based system are listed in apt.txt. These can be installed by running:
 
 ```
-RUN cat apt.txt | xargs apt-get install -y
+cat apt.txt | xargs apt-get install -y
 ```
 If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image.
 
