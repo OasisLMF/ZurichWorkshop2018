@@ -24,8 +24,8 @@ virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 jupyter nbextension enable --py --sys-prefix qgrid
-# Temporary requirement to get development keys server features
-pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF.git@feature/refactor-lookup-factory#egg=oasislmf
+# Temporary requirement to use new lookup framework in the development version of the oasislmf package
+pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF.git@master#egg=oasislmf
 
 pip install ipykernel
 ipython kernel install --user --name=ZurichWorkshop2018
