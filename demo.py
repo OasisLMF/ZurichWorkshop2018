@@ -18,13 +18,13 @@ props = copy.deepcopy(DEFAULT_RTREE_INDEX_PROPS); props['leaf_capacity'] = 1000;
 
 # Create an EUWS lookup (combines peril and vulnerability lookup) using the
 # Oasis lookup factory
-info, euws = olf.create(lookup_config_fp='lookup.json')
-print('\nEUWS model info: {}'.format(info))
-print('\nCombined EUWS lookup (peril + vuln): {}'.format(euws))
+info, meeq = olf.create(lookup_config_fp='lookup_meeq.json')
+print('\nmodel info: {}'.format(info))
+print('\ncombined lookup (peril + vuln): {}'.format(meeq))
 
 # Get the config dict from the lookup (loaded in from the file path you
 # provided to create the lookup)
-config = euws.config
+config = meeq.config
 #print('lookup config: {}'.format(config))
 
 # Check that keys data path look correct
@@ -41,10 +41,10 @@ print('\nlocations config: {}'.format(config.get('locations')))
 
 # Get the peril and vulnerabiity lookups from the main lookup - they are stored
 # as attributes
-plookup = euws.peril_lookup
+plookup = meeq.peril_lookup
 print('\nperil lookup: {}'.format(plookup))
 
-vlookup = euws.vulnerability_lookup
+vlookup = meeq.vulnerability_lookup
 print('\nvuln lookup: {}'.format(vlookup))
 
 # Get the areas index and check the pickling protocol used to create it
@@ -83,10 +83,10 @@ print('\nvuln file key columns: {}'.format(vlookup.key_cols))
 
 # Create a locations dataframe from a test locations file
 loc_df = get_dataframe(
-    src_fp='keys_data/EuWs/model_loc_test.csv',
-    non_na_cols=('ID', 'LONGITUDE', 'LATITUDE','VULNERABILITY',),
-    col_dtypes={'ID': int, 'LONGITUDE': float, 'LATITUDE': float, 'VULNERABILITY': int},
-    sort_col='ID'
+    src_fp='../Catrisks/keys_data/MEEQ/catrisks_meeq_model_loc_test.csv',
+    non_na_cols=('Item_ID', 'LONGITUDE', 'LATITUDE',),
+    col_dtypes={'Item_ID': int, 'LONGITUDE': float, 'LATITUDE': float},
+    sort_col='Item_ID'
 )
 
 # Do a combined, peril and vuln lookup for an individual location
@@ -97,11 +97,11 @@ print('\nloc: {}'.format(loc))
 
 print('\nperil lookup: {}'.format(plookup.lookup(loc)))
 print('\nvuln lookup: {}'.format(vlookup.lookup(loc)))
-print('\ncombined lookup: {}'.format(euws.lookup(loc)))
+print('\ncombined lookup: {}'.format(meeq.lookup(loc)))
 
 # Do a bulk combined lookup and time it
 t = time.time()
-results = [res for res in euws.bulk_lookup(loc for _, loc in loc_df.iterrows())]
+results = [res for res in meeq.bulk_lookup(loc for _, loc in loc_df.iterrows())]
 tt = time.time() - t
 print('\nCompleted combined bulk lookup for {} locations in {} seconds'.format(len(loc_df), tt))
 

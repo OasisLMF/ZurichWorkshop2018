@@ -59,7 +59,7 @@
         "file_path": "%%KEYS_DATA_PATH%%/vulnerability_dict.csv",
         "file_type": "csv",
         "float_precision_high": true,
-        "num_vulnerabilities": 6,
+        "num_vulnerabilities": 148,
         "cols": ["VULNERABILITY_ID", "COVERAGE", "BLDGSCHEME", "BLDGCLASS"],
         "non_na_cols": ["VULNERABILITY_ID", "COVERAGE", "BLDGSCHEME", "BLDGCLASS"],
         "key_cols": ["COVERAGE", "BLDGSCHEME", "BLDGCLASS"],
@@ -77,9 +77,9 @@
         "coords_y_col": "LATITUDE",
         "coords_x_bounds": [-180, 180],
         "coords_y_bounds": [-90, 90],
-        "non_na_cols": ["Item_ID", "LONGITUDE", "LATITUDE", "BLDGSCHEME", "BLDGCLASS"],
+        "non_na_cols": ["Item_ID", "LONGITUDE", "LATITUDE", "BLDGSCHEME", "BLDGCLASS", "COVERAGE"],
         "col_dtypes": {
-            "Item_ID": "int", "LONGITUDE": "float", "LATITUDE": "float", "BLDGSCHEME": "int", "BLDGCLASS": "int"
+            "Item_ID": "int", "LONGITUDE": "float", "LATITUDE": "float", "BLDGSCHEME": "int", "BLDGCLASS": "int", "COVERAGE": "int"
         },
         "sort_col": "Item_id",
         "sort_ascending": true
