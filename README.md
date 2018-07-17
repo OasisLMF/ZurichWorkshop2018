@@ -22,6 +22,7 @@ We recommend using a Python virtual environment for running the excercises. To s
 ```
 virtualenv venv
 source venv/bin/activate
+pip install git+https://github.com/OasisLMF/OasisLMF.git@master#egg=oasislmf
 pip install -r requirements.txt
 jupyter nbextension enable --py --sys-prefix qgrid
 # Temporary requirement to use new lookup framework in the development version of the oasislmf package
