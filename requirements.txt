@@ -16,4 +16,4 @@ ipywidgets
 qgrid
 tabulate==0.8.1
 pandas-datareader>=0.5.0
-mpldatacursor
+pyyaml
