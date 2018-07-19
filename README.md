@@ -6,6 +6,11 @@
 
 Workshop material for Zurich Oasis conference 2018.
 
+## Model data
+
+The model data is a simplified version of the Middle-East Easthquake model by <a href="http://www.catrisks.com">Catrisks</a>, covering only the Beirut locality. 
+Please note that the model data was prepared specifically for this workshop and is not a complete Catrisks view of risk.
+
 ## Setting up the environment
 
 ### Local install (Linux)
@@ -19,7 +24,7 @@ If using another distribution then the comparable packages will need to be ident
 
 We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory:
 
-```
+```http://www.catrisks.com/
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
