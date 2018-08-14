@@ -12,3 +12,4 @@ unixodbc
 unixodbc-dev
 vim
 git
+apt-utils
