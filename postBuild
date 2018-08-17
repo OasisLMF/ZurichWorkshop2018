@@ -1,3 +1,4 @@
 #!/bin/bash
 
-# jupyter nbextension enable --py --sys-prefix qgrid
+pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF.git@feature/refactor-lookup-factory#egg=oasislmf
+jupyter nbextension enable --py --sys-prefix qgrid
