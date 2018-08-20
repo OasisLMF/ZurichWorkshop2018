@@ -5,6 +5,10 @@
         "model_version": "0.0.0.1"
     },
     "keys_data_path": "keys_data/MEEQ",
+    "coverage": {
+        "coverage_types": [1],
+        "coverage_type_col": "COVERAGE_TYPE"
+    },
     "peril": {
         "peril": "quake",
         "peril_id": 3,
@@ -12,9 +16,11 @@
         "file_type": "csv",
         "float_precision_high": true,
         "num_areas": 228,
-        "cols": ["AREA_PERIL_ID", "LONGITUDE", "LATITUDE"],
-        "non_na_cols": ["AREA_PERIL_ID",  "LONGITUDE", "LATITUDE"],
+        "cols": ["PERIL_ID", "COVERAGE_TYPE", "AREA_PERIL_ID", "LONGITUDE", "LATITUDE"],
+        "non_na_cols": ["PERIL_ID", "COVERAGE_TYPE", "AREA_PERIL_ID",  "LONGITUDE", "LATITUDE"],
         "col_dtypes": {
+            "PERIL_ID": "int",
+            "COVERAGE_TYPE": "int",
             "AREA_PERIL_ID": "int",
             "LONGITUDE": "float",
             "LATITUDE": "float"
@@ -60,11 +66,15 @@
         "file_type": "csv",
         "float_precision_high": true,
         "num_vulnerabilities": 148,
-        "cols": ["VULNERABILITY_ID", "COVERAGE", "BLDGSCHEME", "BLDGCLASS"],
-        "non_na_cols": ["VULNERABILITY_ID", "COVERAGE", "BLDGSCHEME", "BLDGCLASS"],
-        "key_cols": ["COVERAGE", "BLDGSCHEME", "BLDGCLASS"],
+        "cols": ["PERIL_ID", "COVERAGE_TYPE", "VULNERABILITY_ID", "BLDGSCHEME", "BLDGCLASS"],
+        "non_na_cols": ["PERIL_ID", "COVERAGE_TYPE", "VULNERABILITY_ID",  "BLDGSCHEME", "BLDGCLASS"],
+        "key_cols": ["PERIL_ID", "COVERAGE_TYPE", "BLDGSCHEME", "BLDGCLASS"],
         "col_dtypes": {
-            "VULNERABILITY_ID": "int", "COVERAGE": "int", "BLDGSCHEME": "str", "BLDGCLASS": "str"
+            "PERIL_ID": "int",
+            "COVERAGE_TYPE": "int",
+            "VULNERABILITY_ID": "int", 
+            "BLDGSCHEME": "str", 
+            "BLDGCLASS": "str"
         },
         "sort_col": "VULNERABILITY_ID",
         "sort_ascending": true,
